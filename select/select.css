@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+.select_box {
+  width: 300px;
+  margin: 20px auto;
+}
+.select_K {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #d8dde6;
+  border-radius: 3px;
+  position: relative;
+}
+.downUp {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #ccc url(./images/down.png);
+  background-repeat: no-repeat;
+  background-size: 60% 50%;
+  background-position: center center;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.up {
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg); 	/* IE 9 */
+  -moz-transform:rotate(180deg); 	/* Firefox */
+  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+  -o-transform:rotate(180deg);
+}
+.up1 {
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg); 	/* IE 9 */
+  -moz-transform:rotate(180deg); 	/* Firefox */
+  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+  -o-transform:rotate(180deg);
+}
+.select_down {
+  border: 1px solid #d8dde6;
+  border-top: 0;
+  border-radius: 3px;
+  width: 100%;
+  display: none;
+  /* height: 400px; */
+}
+.optionClass {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #d8dde6;
+  list-style: none;
+}
+
+.optionClass:nth-last-of-type(1) {
+  border-bottom: 0;
+}
+.selectTitle {
+  line-height: 40px;
+  padding-left: 15px;
+}
+/* placeholder 无数据颜色 */
+.placeholder {
+  color: #ccc;
+}
+.placeholder1 {
+  color: bisque;
+}

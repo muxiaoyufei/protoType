@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>仿select</title>
+  <link rel="stylesheet" href="./select.css">
+  <script src="./select.js"></script>
+  <script>
+    window.onload = function(){
+      var select1 = new selectFun("select_K");
+      select1.init(select1);
+      var select2 = new selectFun("select_K1");
+      select2.init(select2);
+      var select3 = new selectFun("select_K2");
+      select2.init(select3);
+    }
+  </script>
+</head>
+<body>
+  <div class="select_box">
+    <div class="select_K" id="select_K">
+      <span class="selectTitle placeholder" id="selectTitle">--无--</span>
+      <span class="downUp"></span>
+    </div>
+    <ul class="select_down" id="select_down">
+      <li class="optionClass">--无--</li>
+      <li class="optionClass">河北</li>
+      <li class="optionClass">河南</li>
+      <li class="optionClass">湖北</li>
+      <li class="optionClass">湖南</li>
+    </ul>
+  </div>
+
+  <div class="select_box">
+    <div class="select_K" id="select_K1">
+      <span class="selectTitle placeholder" id="selectTitle">--无--</span>
+      <span class="downUp"></span>
+    </div>
+    <ul class="select_down" id="select_down1">
+      <li class="optionClass">--无--</li>
+      <li class="optionClass">河北</li>
+      <li class="optionClass">河南</li>
+      <li class="optionClass">湖北</li>
+      <li class="optionClass">湖南</li>
+    </ul>
+  </div>
+
+  <div class="select_box">
+    <div class="select_K" id="select_K2">
+      <span class="selectTitle placeholder" id="selectTitle">--无--</span>
+      <span class="downUp"></span>
+    </div>
+    <ul class="select_down" id="select_down1">
+      <li class="optionClass">--无--</li>
+      <li class="optionClass">河北</li>
+      <li class="optionClass">河南</li>
+      <li class="optionClass">湖北</li>
+      <li class="optionClass">湖南</li>
+    </ul>
+  </div>
+  
+</body>
+</html>
