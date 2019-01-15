@@ -18,21 +18,19 @@
     var than = this;
     this.selectFrame.onclick = function(e){
       var len = document.getElementsByClassName("select_down");
-      var downUps = document.getElementsByClassName("downUp")
+      var downUps = document.getElementsByClassName("downUp");
+      // 判断是否点击的为当前的id，如果是则添加toggle事件进行显示隐藏，如果不是则全部隐藏
       for(var j=0;j<len.length; j++){
-        console.log("than.id--->", than.selectDownFrame.id);
-        console.log("len[j].id--->", len[j].id);
         if (than.selectDownFrame.id == len[j].id){
           toggle(len[j]);
           toggleClass(len[j].parentElement.children[0].children[1],up);
         }else{
           // 隐藏所有
           len[j].style.display = "none";
-          downUps[j].classList.remove("up");
+          downUps[j].classList.remove('up');
         }
       }
       var e = e || event;
-
       // 阻止 冒泡事件 冒泡到 document上
       stopPropagation(e);
     }
@@ -56,15 +54,11 @@
       }
     }
   }
-
+  // 添加初始化
   selectFun.prototype.init = function(fun){
-    console.log("fun>>>>>>>",fun)
     fun.select("up");
     fun.selectOption("placeholder","up");
-  }
-
-
-  document.onclick=function(e){
+    document.onclick=function(e){
     var len = document.getElementsByClassName("select_down");
     var downUps = document.getElementsByClassName("downUp")
     for(var j=0;j<len.length; j++){
@@ -72,6 +66,10 @@
       downUps[j].classList.remove("up")
     }
   }
+  }
+
+
+  
   /** 
   *  js 实现 toggle切换 显示&隐藏
   */

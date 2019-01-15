@@ -14,7 +14,7 @@
       var select2 = new selectFun("select_K1");
       select2.init(select2);
       var select3 = new selectFun("select_K2");
-      select2.init(select3);
+      select3.init(select3,"select_down");
     }
   </script>
 </head>
@@ -34,11 +34,11 @@
   </div>
 
   <div class="select_box">
-    <div class="select_K" id="select_K1">
+    <div class="select_K" id="select_K1"> <!--该id需要保持唯一-->
       <span class="selectTitle placeholder" id="selectTitle">--无--</span>
       <span class="downUp"></span>
     </div>
-    <ul class="select_down" id="select_down1">
+    <ul class="select_down" id="select_down1"> <!--该id需要保持唯一-->
       <li class="optionClass">--无--</li>
       <li class="optionClass">河北</li>
       <li class="optionClass">河南</li>
@@ -52,7 +52,7 @@
       <span class="selectTitle placeholder" id="selectTitle">--无--</span>
       <span class="downUp"></span>
     </div>
-    <ul class="select_down" id="select_down1">
+    <ul class="select_down" id="select_down2">
       <li class="optionClass">--无--</li>
       <li class="optionClass">河北</li>
       <li class="optionClass">河南</li>
@@ -60,6 +60,6 @@
       <li class="optionClass">湖南</li>
     </ul>
   </div>
-  
+
 </body>
 </html>
